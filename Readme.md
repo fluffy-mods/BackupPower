@@ -1,4 +1,4 @@
-[![RimWorld 1.1](https://img.shields.io/badge/RimWorld-1.1-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld 1.2](https://img.shields.io/badge/RimWorld-1.2-brightgreen.svg)](http://rimworldgame.com/)
 
 add control units to generators to automatically switch them on and off when needed
 
@@ -74,4 +74,4 @@ Become a supporter and show your appreciation by buying me a coffee (or contribu
   
   
 ![Version](https://banners.karel-kroeze.nl/title/Version.png)
-This is version 1.9.160, for RimWorld 1.1.2654.
+This is version 1.9.161, for RimWorld 1.2.2719.
