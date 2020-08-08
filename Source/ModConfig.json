@@ -3,14 +3,21 @@
     "version": {
         "major": 1,
         "minor": 9,
-        "build": 169
+        "build": 173
     },
     "git_user": "fluffy-mods",
     "git_repo": "BackupPower",
     "visibility": 0,
     "packageId": "fluffy.backuppower",
-    "changenote": "2020-08-08 11:08 :: Fluffy :: add run on batteries toggle\n2020-08-08 00:08 :: Fluffy :: lower research cost change prerequisite to electricity\n2020-08-08 00:08 :: Fluffy :: build last release for 1.1",
+    "changenote": "2020-08-08 11:08 :: Fluffy :: add 1.2 updates into 1.1\n2020-08-08 11:08 :: Fluffy :: add run on batteries toggle\n2020-08-08 00:08 :: Fluffy :: lower research cost change prerequisite to electricity\n2020-08-08 00:08 :: Fluffy :: build last release for 1.1",
     "changenotes": [
+        {
+            "repo": "BackupPower",
+            "hash": "1729151b2659849079185729672385d822ce367b",
+            "date": "2020-08-08 11:08",
+            "author": "Fluffy",
+            "message": "add 1.2 updates into 1.1"
+        },
         {
             "repo": "BackupPower",
             "hash": "5eedee0292dcbb6600c983683a8a4e247d025717",

@@ -108,7 +108,7 @@ namespace BackupPower
                 var backups = users.Where( u => u.broker            != null
                                              && u.currentProduction > 0
                                              && ( u.currentProduction <= ( production - need ) || u.broker.runOnBatteriesOnly )
-                                             && ( !hasStorage || storageLevel >= u.broker.batteryRange.max )
+                                             && ( ( !hasStorage && !u.broker.runOnBatteriesOnly ) || storageLevel >= u.broker.batteryRange.max )
                                              && u.broker.CanTurnOff() )
                                    .ToList();
 
