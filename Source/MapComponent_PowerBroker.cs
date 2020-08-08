@@ -105,10 +105,9 @@ namespace BackupPower
             if ( production > need || hasStorage && storageLevel > 0 )
             {
                 // try to shut backups off
-                var overProduction = production - need;
                 var backups = users.Where( u => u.broker            != null
                                              && u.currentProduction > 0
-                                             && u.currentProduction <= overProduction
+                                             && ( u.currentProduction <= ( production - need ) || u.broker.runOnBatteriesOnly )
                                              && ( !hasStorage || storageLevel >= u.broker.batteryRange.max )
                                              && u.broker.CanTurnOff() )
                                    .ToList();

@@ -19,7 +19,10 @@ namespace BackupPower
     public class Building_BackupPowerAttachment : Building
     {
         public  FloatRange           batteryRange = FloatRange.One;
-        private Command_BatteryRange _command;
+        public bool runOnBatteriesOnly = true;
+        private Command_BatteryRange _command_BatteryRange;
+        private Command_Toggle _command_RunOnBatteriesOnly;
+
         private int                  _lastOnTick;
 
         private         Color         _prevColor;
@@ -74,11 +77,13 @@ namespace BackupPower
             base.ExposeData();
 
             Scribe_Values.Look( ref batteryRange, "batteryRange", FloatRange.One );
+            Scribe_Values.Look(ref runOnBatteriesOnly, "runOnBatteriesOnly", true);
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
         {
-            yield return _command;
+            yield return _command_BatteryRange;
+            yield return _command_RunOnBatteriesOnly;
             foreach ( var _gizmo in base.GetGizmos() )
                 yield return _gizmo;
         }
@@ -101,7 +106,16 @@ namespace BackupPower
         public override void SpawnSetup( Map map, bool respawningAfterLoad )
         {
             base.SpawnSetup( map, respawningAfterLoad );
-            _command = new Command_BatteryRange( this );
+            _command_BatteryRange = new Command_BatteryRange( this );
+            _command_RunOnBatteriesOnly = new Command_Toggle()
+            {
+                icon = DefDatabase<ThingDef>.GetNamed("Battery").uiIcon,
+                iconProportions = new Vector2( 2, 3 ),
+                defaultLabel = I18n.RunOnBatteriesOnly_Label,
+                defaultDesc = I18n.RunOnBatteriesOnly_Desc,
+                isActive = () => runOnBatteriesOnly,
+                toggleAction = () => runOnBatteriesOnly = !runOnBatteriesOnly
+            };
 
             if ( !respawningAfterLoad )
                 TryAttach( Map );

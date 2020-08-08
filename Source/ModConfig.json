@@ -3,14 +3,21 @@
     "version": {
         "major": 1,
         "minor": 9,
-        "build": 161
+        "build": 168
     },
     "git_user": "fluffy-mods",
     "git_repo": "BackupPower",
     "visibility": 0,
     "packageId": "fluffy.backuppower",
-    "changenote": "",
+    "changenote": "2020-08-08 00:08 :: Fluffy :: lower research cost change prerequisite to electricity",
     "changenotes": [
+        {
+            "repo": "BackupPower",
+            "hash": "48a01f8b1ebfa166395100aaff868f9776a659e9",
+            "date": "2020-08-08 00:08",
+            "author": "Fluffy",
+            "message": "lower research cost change prerequisite to electricity"
+        },
         {
             "repo": "BackupPower",
             "hash": "739b020ae06dd74dcb95c1eaaa5a7e8d9a932128",

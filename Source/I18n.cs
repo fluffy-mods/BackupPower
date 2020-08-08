@@ -76,6 +76,9 @@ namespace BackupPower
             return Translate( "TurnsOnBelow", value.ToStringPercent().Colorize( Resources.greenish ) );
         }
 
+        public static string RunOnBatteriesOnly_Label = Translate("RunOnBatteriesOnly.Label");
+        public static string RunOnBatteriesOnly_Desc = Translate("RunOnBatteriesOnly.Desc");
+
         private static string Key( string key )
         {
             return $"Fluffy.BackupPower.{key}";
