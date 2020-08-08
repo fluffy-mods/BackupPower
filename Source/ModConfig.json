@@ -1,30 +1,34 @@
 {
-    "name": "Backup Power",
-    "version": {
-        "major": 1,
-        "minor": 9,
-        "build": 163
+  "name": "Backup Power",
+  "version": {
+    "major": 1,
+    "minor": 9,
+    "build": 168
+  },
+  "git_user": "fluffy-mods",
+  "git_repo": "BackupPower",
+  "visibility": 0,
+  "packageId": "fluffy.backuppower",
+  "changenote": "2020-08-08 00:08 :: Fluffy :: lower research cost change prerequisite to electricity",
+  "changenotes": [
+    {
+      "repo": "BackupPower",
+      "hash": "48a01f8b1ebfa166395100aaff868f9776a659e9",
+      "date": "2020-08-08 00:08",
+      "author": "Fluffy",
+      "message": "lower research cost change prerequisite to electricity"
     },
-    "git_user": "fluffy-mods",
-    "git_repo": "BackupPower",
-    "visibility": 0,
-    "packageId": "fluffy.backuppower",
-    "changenote": "",
-    "changenotes": [
-        {
-            "repo": "BackupPower",
-            "hash": "739b020ae06dd74dcb95c1eaaa5a7e8d9a932128",
-            "date": "2020-06-12 22:06",
-            "author": "Fluffy",
-            "message": "Release 1.9.160 [nolog]"
-        }
-    ],
-    "contributors": {
-        "Cenbes": "Control box texture"
-    },
-    "tags": [
-        "1.1",
-        "1.2"
-    ],
-    "publishedfileid": "2084493662"
+    {
+      "repo": "BackupPower",
+      "hash": "739b020ae06dd74dcb95c1eaaa5a7e8d9a932128",
+      "date": "2020-06-12 22:06",
+      "author": "Fluffy",
+      "message": "Release 1.9.160 [nolog]"
+    }
+  ],
+  "contributors": {
+    "Cenbes": "Control box texture"
+  },
+  "tags": ["1.1", "1.2"],
+  "publishedfileid": "2084493662"
 }
