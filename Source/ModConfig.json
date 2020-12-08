@@ -3,57 +3,14 @@
     "version": {
         "major": 1,
         "minor": 10,
-        "build": 175
+        "build": 179
     },
     "git_user": "fluffy-mods",
     "git_repo": "BackupPower",
     "visibility": 0,
     "packageId": "fluffy.backuppower",
-    "changenote": "2020-08-08 11:08 :: Fluffy :: add 1.2 updates into 1.1\n2020-08-08 11:08 :: Fluffy :: add run on batteries toggle\n2020-08-08 00:08 :: Fluffy :: lower research cost change prerequisite to electricity\n2020-08-08 00:08 :: Fluffy :: build last release for 1.1",
-    "changenotes": [
-        {
-            "repo": "BackupPower",
-            "hash": "8c93def2a2732c75fa23d5f96fd18d65bbe3ccae",
-            "date": "2020-08-08 11:08",
-            "author": "Fluffy",
-            "message": "add news item for batterier only [nolog]"
-        },
-        {
-            "repo": "BackupPower",
-            "hash": "1729151b2659849079185729672385d822ce367b",
-            "date": "2020-08-08 11:08",
-            "author": "Fluffy",
-            "message": "add 1.2 updates into 1.1"
-        },
-        {
-            "repo": "BackupPower",
-            "hash": "5eedee0292dcbb6600c983683a8a4e247d025717",
-            "date": "2020-08-08 11:08",
-            "author": "Fluffy",
-            "message": "add run on batteries toggle"
-        },
-        {
-            "repo": "BackupPower",
-            "hash": "48a01f8b1ebfa166395100aaff868f9776a659e9",
-            "date": "2020-08-08 00:08",
-            "author": "Fluffy",
-            "message": "lower research cost change prerequisite to electricity"
-        },
-        {
-            "repo": "BackupPower",
-            "hash": "8087f1fbddfc88c3e74e515db8ee9de2c493a37b",
-            "date": "2020-08-08 00:08",
-            "author": "Fluffy",
-            "message": "build last release for 1.1"
-        },
-        {
-            "repo": "BackupPower",
-            "hash": "739b020ae06dd74dcb95c1eaaa5a7e8d9a932128",
-            "date": "2020-06-12 22:06",
-            "author": "Fluffy",
-            "message": "Release 1.9.160 [nolog]"
-        }
-    ],
+    "changenote": "",
+    "changenotes": [],
     "contributors": {
         "Cenbes": "Control box texture"
     },

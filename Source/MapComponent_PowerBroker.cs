@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using JetBrains.Annotations;
 using RimWorld;
 using UnityEngine;
@@ -68,7 +69,27 @@ namespace BackupPower
 
         public float PotentialProduction( CompPowerTrader comp )
         {
-            if ( !( comp is CompPowerPlant plant ) )
+#if DEBUG
+            var _plant         = comp as CompPowerPlant;
+            var _refuelable    = _plant?.parent.RefuelableComp();
+            var _breakdownable = _plant?.parent.BreakdownableComp();
+
+            var msg = comp.parent.def.defName;
+            msg += $"\n\tpowerplant: {_plant != null}";
+            if ( _plant != null )
+            {
+                msg += $"\n\trefuelable: {_refuelable != null}";
+                msg += $"\n\tfueled: {_refuelable?.HasFuel}";
+                msg += $"\n\tbreakdownable: {_breakdownable != null}";
+                msg += $"\n\tbroken: {_breakdownable?.BrokenDown}";
+                msg += $"\n\tdesired: {_plant.DesiredOutput()}";
+                msg += $"\n\tcurrent: {_plant.PowerOutput}";
+            }
+
+            Log.Message( msg );
+#endif
+
+        if ( !( comp is CompPowerPlant plant ) )
                 return 0;
 
             var refuelable = plant.parent.RefuelableComp();
