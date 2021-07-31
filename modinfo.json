@@ -1,0 +1,68 @@
+{
+    "name": "Backup Power",
+    "sourceDir": ".",
+    "targetDir": "BackupPower",
+    "url": "https://github.com/fluffy-mods/BackupPower",
+    "version": {
+        "major": 2,
+        "minor": 0,
+        "build": 6
+    },
+    "author": {
+        "name": "Fluffy",
+        "url": "https://github.com/fluffy-mods/",
+        "email": "fluffy.l2032@gmail.com"
+    },
+    "git": {
+        "owner": "fluffy-mods",
+        "repo": "BackupPower",
+        "url": "https://github.com/fluffy-mods/BackupPower"
+    },
+    "changelog": [
+        {
+            "date": "2021-06-03T06:12:08.000Z",
+            "message": "Create BackupPower.xml",
+            "author": {
+                "name": "Juijote",
+                "email": "22154581+Juijote@users.noreply.github.com"
+            },
+            "hash": "15d661cc0de073db960d3a4fc49823b341307f03"
+        }
+    ],
+    "contributions": [
+        {
+            "hash": "15d661cc0de073db960d3a4fc49823b341307f03",
+            "author": "Juijote",
+            "description": "Simplified Chinese translation"
+        }
+    ],
+    "contributors": {
+        "Juijote": [
+            {
+                "hash": "15d661c",
+                "author": "Juijote",
+                "description": "Simplified Chinese translation"
+            }
+        ]
+    },
+    "dependencies": [
+        {
+            "type": "loadAfter",
+            "id": "Ludeon.RimWorld"
+        }
+    ],
+    "attributions": [
+        {
+            "description": "power button preview icon",
+            "author": "Freepik",
+            "license": "BY-NC",
+            "url": "https://www.freepik.com/"
+        },
+        {
+            "description": "thunder preview icon",
+            "author": "Pixel Perfect",
+            "license": "BY-NC",
+            "url": "https://icon54.com/"
+        }
+    ]
+}
