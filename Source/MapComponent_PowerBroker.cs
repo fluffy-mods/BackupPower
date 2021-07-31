@@ -121,7 +121,7 @@ namespace BackupPower {
 
             // Log.Debug( $"need: {need}, production: {production}, static: {staticProduction}" );
 
-            if (production > need || hasStorage && storageLevel > 0) {
+            if (production > need || (hasStorage && storageLevel > 0)) {
                 // try to shut backups off
                 List<(CompPowerTrader comp, Building_BackupPowerAttachment broker, float consumption, float currentProduction, float potentialProduction)> backups = users.Where( u => u.broker            != null
                                              && u.currentProduction > 0
@@ -135,7 +135,7 @@ namespace BackupPower {
                 }
             }
 
-            if (production < need || hasStorage && storageLevel < 1) {
+            if (production < need || (hasStorage && storageLevel < 1)) {
                 // try to turn backups on
                 List<(CompPowerTrader comp, Building_BackupPowerAttachment broker, float consumption, float currentProduction, float potentialProduction)> backups = users.Where( u => u.broker                        != null
                                              && Math.Abs( u.currentProduction ) < Mathf.Epsilon

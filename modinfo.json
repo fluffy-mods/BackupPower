@@ -5,8 +5,8 @@
     "url": "https://github.com/fluffy-mods/BackupPower",
     "version": {
         "major": 2,
-        "minor": 0,
-        "build": 6
+        "minor": 1,
+        "build": 7
     },
     "author": {
         "name": "Fluffy",
@@ -19,6 +19,15 @@
         "url": "https://github.com/fluffy-mods/BackupPower"
     },
     "changelog": [
+        {
+            "date": "2021-07-31T14:35:52.000Z",
+            "message": "red squiglies, update project",
+            "author": {
+                "name": "Fluffy",
+                "email": "fluffy.l2032@gmail.com"
+            },
+            "hash": "1fce8fcccbb9e15a3bbc961f100ff7d7f41cf6a1"
+        },
         {
             "date": "2021-06-03T06:12:08.000Z",
             "message": "Create BackupPower.xml",
