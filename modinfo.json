@@ -5,8 +5,8 @@
     "url": "https://github.com/fluffy-mods/BackupPower",
     "version": {
         "major": 2,
-        "minor": 1,
-        "build": 12
+        "minor": 2,
+        "build": 13
     },
     "author": {
         "name": "Fluffy",
@@ -19,6 +19,15 @@
         "url": "https://github.com/fluffy-mods/BackupPower"
     },
     "changelog": [
+        {
+            "date": "2022-09-29T00:22:42.000Z",
+            "message": "build for mirage, use temp refs",
+            "author": {
+                "name": "Fluffy",
+                "email": "fluffy.l2032@gmail.com"
+            },
+            "hash": "b56aa1f5dab6847a28f2c4b92cd5ba420f8d3e07"
+        },
         {
             "date": "2022-02-26T16:06:56.000Z",
             "message": "Update description",
