@@ -5,8 +5,8 @@
     "url": "https://github.com/fluffy-mods/BackupPower",
     "version": {
         "major": 2,
-        "minor": 2,
-        "build": 13
+        "minor": 3,
+        "build": 14
     },
     "author": {
         "name": "Fluffy",
@@ -20,6 +20,51 @@
     },
     "changelog": [
         {
+            "date": "2022-10-14T21:41:30.000Z",
+            "message": "Brazilian Portuguese translations",
+            "author": {
+                "name": "Lobo Metalúrgico",
+                "email": "43734867+LoboMetalurgico@users.noreply.github.com"
+            },
+            "hash": "22a68cf69bed3433bcd136a4cc06a63505012a45"
+        },
+        {
+            "date": "2022-10-14T21:39:55.000Z",
+            "message": "apply potential speed patch (shouldn't matter, but who knows)",
+            "author": {
+                "name": "Fluffy",
+                "email": "fluffy.l2032@gmail.com"
+            },
+            "hash": "373079b226bed6cab7e3627c51d1d505f3753486"
+        },
+        {
+            "date": "2022-10-14T21:36:19.000Z",
+            "message": "update refs",
+            "author": {
+                "name": "Fluffy",
+                "email": "fluffy.l2032@gmail.com"
+            },
+            "hash": "e1808c53388db3b583fbe0287c1143db49c840a8"
+        },
+        {
+            "date": "2022-10-14T19:55:42.000Z",
+            "message": "release v2.2.13",
+            "author": {
+                "name": "Fluffy",
+                "email": "fluffy.l2032@gmail.com"
+            },
+            "hash": "7de759c86a5f7a8ab42932310b2d114b48b5f232"
+        },
+        {
+            "date": "2022-10-14T19:55:42.000Z",
+            "message": "release v2.2.13",
+            "author": {
+                "name": "Fluffy",
+                "email": "fluffy.l2032@gmail.com"
+            },
+            "hash": "35e2d5de6d2998d60131029ddaf7bf18998ac7cf"
+        },
+        {
             "date": "2022-09-29T00:22:42.000Z",
             "message": "build for mirage, use temp refs",
             "author": {
@@ -27,6 +72,24 @@
                 "email": "fluffy.l2032@gmail.com"
             },
             "hash": "b56aa1f5dab6847a28f2c4b92cd5ba420f8d3e07"
+        },
+        {
+            "date": "2022-09-29T00:22:42.000Z",
+            "message": "build for mirage, use temp refs",
+            "author": {
+                "name": "Fluffy",
+                "email": "fluffy.l2032@gmail.com"
+            },
+            "hash": "ba9bf96f157be62a5152e780be599f2bfff63e07"
+        },
+        {
+            "date": "2022-05-01T20:03:11.000Z",
+            "message": "performance optimization",
+            "author": {
+                "name": "Taranchuk",
+                "email": "nfhfyxer@gmail.com"
+            },
+            "hash": "e4748f87977fb2bb8286d19304f30f58d99856e5"
         },
         {
             "date": "2022-02-26T16:06:56.000Z",
@@ -70,6 +133,16 @@
             "hash": "15d661cc0de073db960d3a4fc49823b341307f03",
             "author": "Juijote",
             "description": "Simplified Chinese translation"
+        },
+        {
+            "hash": "22a68cf69bed3433bcd136a4cc06a63505012a45",
+            "author": "Lobo Metalúrgico",
+            "description": "Brazilian Portuguese translations"
+        },
+        {
+            "hash": "e4748f87977fb2bb8286d19304f30f58d99856e5",
+            "author": "Taranchuk",
+            "description": "performance optimization"
         }
     ],
     "contributors": {
@@ -78,6 +151,20 @@
                 "hash": "15d661c",
                 "author": "Juijote",
                 "description": "Simplified Chinese translation"
+            }
+        ],
+        "Lobo Metalúrgico": [
+            {
+                "hash": "22a68cf",
+                "author": "Lobo Metalúrgico",
+                "description": "Brazilian Portuguese translations"
+            }
+        ],
+        "Taranchuk": [
+            {
+                "hash": "e4748f8",
+                "author": "Taranchuk",
+                "description": "performance optimization"
             }
         ]
     },
