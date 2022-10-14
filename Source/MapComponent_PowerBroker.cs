@@ -105,14 +105,14 @@ namespace BackupPower {
 
         public void PowerNetUpdate(PowerNet net, HashSet<Building_BackupPowerAttachment> brokers) {
             // get desired power
-            IEnumerable<(CompPowerTrader comp, Building_BackupPowerAttachment broker, float consumption, float currentProduction, float potentialProduction)> users = net.powerComps
+            var users = net.powerComps
                            .Select( p => ( comp: p,
                                            broker: p.parent is Building building
                                                ? brokers.FirstOrDefault( b => b.Parent == building )
                                                : null,
                                            consumption: Consumption( p ),
                                            currentProduction: CurrentProduction( p ),
-                                           potentialProduction: PotentialProduction( p ) ) );
+                                           potentialProduction: PotentialProduction( p ) ) ).ToList();
 
             float need         = users.Sum( u => u.consumption );
             float production   = users.Sum( u => u.currentProduction );
